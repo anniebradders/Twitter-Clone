@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <VBox prefHeight="420.0" prefWidth="526.0">
+         <children>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <Pane prefHeight="420.0" prefWidth="526.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Pane layoutX="-2.0" layoutY="60.0" prefHeight="300.0" prefWidth="532.0" style="-fx-background-color: #7a0039;">
+                           <children>
+                              <Text fill="WHITE" layoutX="154.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+                                 <font>
+                                    <Font name="MS Reference Sans Serif" size="15.0" />
+                                 </font></Text>
+                              <Text fill="WHITE" layoutX="154.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                                 <font>
+                                    <Font name="MS Reference Sans Serif" size="15.0" />
+                                 </font></Text>
+                              <Text fill="WHITE" layoutX="205.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="MS Reference Sans Serif" size="32.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="usernameInput" layoutX="154.0" layoutY="100.0" prefHeight="25.0" prefWidth="218.0" />
+                              <PasswordField fx:id="passwordInput" layoutX="154.0" layoutY="150.0" prefHeight="25.0" prefWidth="219.0" />
+                              <Button fx:id="loginButton" layoutX="219.0" layoutY="231.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: #b8004d;" text="Login" textFill="WHITE">
+                                 <font>
+                                    <Font name="MS Reference Sans Serif" size="15.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="77.0" layoutY="179.0" prefHeight="25.0" prefWidth="201.0" textFill="RED" />
+                              <Label fx:id="numAttempt" alignment="CENTER" layoutX="70.0" layoutY="204.0" prefHeight="17.0" prefWidth="219.0" textFill="RED" />
+                           </children>
+                        </Pane>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b3014d" height="25.0" layoutX="-5.0" layoutY="379.0" stroke="#b3014d" strokeType="INSIDE" width="538.0" />
+                     </children>
+                  </Pane>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b3014d" height="25.0" layoutX="-6.0" layoutY="16.0" stroke="#b3014d" strokeType="INSIDE" width="538.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

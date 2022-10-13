@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.postController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="60.0" prefWidth="326.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                        <Label fx:id="userName" alignment="CENTER" prefHeight="30.0" prefWidth="189.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                  <Button fx:id="subscribe" mnemonicParsing="false" onAction="#subscribeOnAction" prefHeight="26.0" prefWidth="106.0" style="-fx-background-color: #b8004d;" text="UNSUBSCRIBE" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="33.0" layoutY="42.0" prefHeight="159.0" prefWidth="119.0" />
+      <VBox alignment="CENTER" layoutY="180.0" prefHeight="60.0" prefWidth="325.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="328.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" layoutX="22.0" layoutY="30.0" prefHeight="159.0" prefWidth="283.0">
+         <children>
+                  <Label fx:id="messageArea" prefHeight="4.0" prefWidth="283.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+                  </Label>
+            <ImageView fx:id="imageDisplay" fitHeight="145.0" fitWidth="287.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <padding>
+            <Insets top="45.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" layoutY="180.0" prefHeight="60.0" prefWidth="325.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="328.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="product-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

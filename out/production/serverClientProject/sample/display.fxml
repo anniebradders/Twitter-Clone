@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.displayController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="248.0" style="-fx-background-color: #7a0039;">
+         <children>
+            <Button fx:id="viewPost" alignment="TOP_LEFT" layoutY="231.0" mnemonicParsing="false" onAction="#viewPostOnAction" prefHeight="38.0" prefWidth="248.0" style="-fx-background-color: #b8004d;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="29.0" />
+               </font>
+            </Button>
+            <Button fx:id="logoutButton" alignment="TOP_LEFT" layoutY="356.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="38.0" prefWidth="248.0" style="-fx-background-color: #b8004d;" text="Logout" textFill="#fffdfd">
+               <font>
+                  <Font name="MS Reference Sans Serif" size="29.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Pane layoutX="248.0" prefHeight="600.0" prefWidth="752.0" style="-fx-background-color: #303030;">
+         <children>
+            <Pane prefHeight="57.0" prefWidth="758.0" style="-fx-background-color: #7a0039;">
+               <children>
+                  <TextField fx:id="subUser" layoutX="-6.0" layoutY="10.0" prefHeight="38.0" prefWidth="401.0" promptText="Subscribe...">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="searchButton" layoutX="423.0" layoutY="14.0" mnemonicParsing="false" onAction="#searchButtonOnAction" style="-fx-background-color: #b8004d;" text="Subscribe" textFill="WHITE" />
+                  <Button fx:id="postButton" layoutX="645.0" layoutY="13.0" mnemonicParsing="false" onAction="#postOnAction" style="-fx-background-color: #b8004d;" text="POST" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <VBox layoutX="244.0" layoutY="55.0" prefHeight="544.0" prefWidth="758.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+         <HBox alignment="CENTER" layoutX="248.0" layoutY="57.0" prefHeight="543.0" prefWidth="752.0">
+            <VBox.margin>
+               <Insets left="10.0" right="10.0" />
+            </VBox.margin>
+            <children>
+               <ScrollPane fx:id="scroll" prefHeight="551.0" prefWidth="749.0" styleClass="transparent">
+                  <content>
+                     <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                        <rowConstraints>
+                           <RowConstraints minHeight="260.0" prefHeight="30.0" />
+                        </rowConstraints>
+                     </GridPane>
+                  </content>
+                  <HBox.margin>
+                     <Insets left="10.0" right="10.0" top="10.0" />
+                  </HBox.margin>
+               </ScrollPane>
+            </children>
+         </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
